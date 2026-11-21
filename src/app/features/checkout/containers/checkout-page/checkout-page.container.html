@@ -12,7 +12,7 @@
       <form class="form" [formGroup]="form" (ngSubmit)="submit()">
         <label>
           სახელი
-          <input formControlName="fullname" type="text" />
+          <input formControlName="fullName" type="text" />
         </label>
         @let name = form.controls.fullName;
         @if (name.touched && name.invalid) {
@@ -48,7 +48,7 @@
         <button type="submit" [disabled]="form.invalid">შეკვეთის გაფორმება</button>
       </form>
 
-      <app-order-summary [item]="cart.items()" [total]="cart.totalPrice()" />
+      <app-order-summary [items]="cart.items()" [total]="cart.totalPrice()" />
     </div>
   }
 </section>

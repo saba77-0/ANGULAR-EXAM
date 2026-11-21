@@ -9,7 +9,7 @@ import { CheckoutService } from '../../services/checkout.service';
 
 @Component({
   selector: 'app-checkout-page',
-  imports: [DatePipe, RouterLink, OrderSummaryComponent],
+  imports: [DatePipe, RouterLink, OrderSummaryComponent, ReactiveFormsModule],
   templateUrl: './checkout-page.container.html',
   styleUrl: './checkout-page.container.css',
 })
